@@ -1,0 +1,134 @@
+
+*{
+    font-family: 'Open Sans', sans-serif !important; 
+}
+.subscription{
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    padding: 2.5rem 0!important;
+    border-bottom: 1px #e3f2fd33 solid;
+}
+
+.subscription__form {
+    height: 50px;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 42.4%;
+    max-width: 42.4%;
+}
+.mat-form-field {
+    flex: 1 1 0%;
+    box-sizing: border-box;
+}
+.subscription__button{
+    background-color: #1976d2;
+    color:inherit;
+    margin-left: -4px;
+    border-radius: 0 4px 4px 0;
+    text-transform: uppercase;
+}
+.divider{
+    margin: 0;
+
+}
+.subscription__text{
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    flex: 1 1 40%;
+    max-width: 40%;
+}
+.subscription__title{
+    text-transform: uppercase;
+}
+
+.subscription__subtitle{
+    color: #ffffffb3;
+}
+
+.info {
+    padding: 2.5rem 0!important;
+    border-bottom: 1px #e3f2fd33 solid;
+    flex-flow: row wrap;
+    display: flex;
+    place-content: stretch space-between;
+    align-items: stretch;
+}
+.info__column {
+    flex-direction: column;
+    display: flex;
+    place-content: flex-start;
+    align-items: flex-start;
+    flex: 1 1 22%;
+    max-width: 22%;
+}
+
+.info__heading {
+    text-transform: uppercase;
+}
+
+.sub-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-footer__text {
+    color: #ffffffb3;
+    font-size: 12px;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .subscription{
+        flex-flow: column;
+        box-sizing: border-box;
+        display: flex;
+        place-content: center;
+        align-items: center;
+        padding: 2.5rem 0!important;
+        border-bottom: 1px #e3f2fd33 solid;
+    }
+
+    .subscription__form {
+        display: flex;
+        height: 50px;
+        flex: none;
+        max-width: none;
+    }
+    .mat-form-field {
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info__column{
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 599px){
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info__column{
+        min-width: 100%;
+    }
+
+    .sub-footer {
+        display: flex;
+        flex-direction: column;
+    }
+}

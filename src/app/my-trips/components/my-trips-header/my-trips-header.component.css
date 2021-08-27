@@ -1,0 +1,71 @@
+.burger{
+    display: none;
+}
+.mat-toolbar {
+    background-color: white;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px 0 #00000024, 0 1px 5px 0 #0000001f;
+    height: 72px;
+}
+ .page-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+} 
+ .row-menu {
+    display: flex;
+    justify-content: space-between;
+} 
+.nav__link {
+    padding: 0 16px;
+}
+.nav__link:hover {
+    background-color: rgba(185, 183, 183, 0.185);
+}
+.nav__name{
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: black;
+}
+.button-xplorers {
+    background: #2196f3;
+    color: white;
+}
+
+.button-guides {
+    background: #ff9800;
+    color: #fff;
+}
+
+.button-xplorers, .button-guides {
+    margin: 0 4px;
+}
+.button-value{
+    font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .burger{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .page-container{
+        display: none;
+    }
+
+    .nav__name{
+        font-family: 'Open Sans', sans-serif !important; 
+    }
+}
+
+@media (max-width: 600px) {
+    .logo{
+        display: none
+    }
+}

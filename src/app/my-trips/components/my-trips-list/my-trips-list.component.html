@@ -1,0 +1,26 @@
+<mat-toolbar class="mat-toolbar">
+  <span>List of Trips</span>
+</mat-toolbar>
+<div class="filter">
+  <span>
+    <mat-form-field appearance="outline" class="filter__field">
+      <input matInput placeholder="Filter Trips" [(ngModel)] = "searchTrip"/>
+    </mat-form-field>
+  </span>
+  <mat-button-toggle-group class="mat-button-toggle-group">
+    <mat-button-toggle> Pending </mat-button-toggle>
+    <mat-button-toggle checked> All </mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+
+<div *ngFor="let trip of tripsSlice | filter: searchTrip" class="trips-list-container">
+  <app-my-trips-list-item [trip]="trip"></app-my-trips-list-item>
+</div>
+
+<mat-paginator
+    [length]="trips.length"
+    [pageSize]="5"
+    [pageSizeOptions]="[5,10,25,100]"
+    (page)="pageChange($event)"
+>
+</mat-paginator>

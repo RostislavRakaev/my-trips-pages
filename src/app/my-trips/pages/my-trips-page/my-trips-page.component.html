@@ -1,0 +1,45 @@
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <a href="#" class="nav__link">
+          <span class="nav__name">Home</span>
+        </a></mat-list-item>
+      <mat-list-item role="listitem">
+        <a href="#" class="nav__link">
+          <span class="nav__name">Trips</span>
+        </a>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <a href="#" class="nav__link">
+          <span class="nav__name">Guides</span>
+        </a>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <a href="#" class="nav__link">
+          <span class="nav__name">Activities</span>
+        </a>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <a href="#" class="nav__link">
+          <span class="nav__name">Destinations</span>
+        </a> 
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <header class="header">
+      <app-my-trips-header (sidenavToggle)="sidenav.toggle()"></app-my-trips-header>
+    </header>
+    <main class="page-container">
+        <app-my-trips-side-bar></app-my-trips-side-bar>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <app-my-trips-footer></app-my-trips-footer>
+      </div>
+    </footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

@@ -1,0 +1,34 @@
+mat-sidenav {
+    height: 100%;
+    width: 250px;
+}
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.page-container{
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.footer-container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.footer{
+    background: url('https://xplorewilderness.herokuapp.com/assets/images/others/homepage.jpg') center no-repeat, rgba(33, 33, 33, .93);
+    background-size: cover;
+    background-blend-mode: hue;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .page-container{
+        padding: 1rem 0;
+    }
+}

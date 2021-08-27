@@ -1,0 +1,53 @@
+<mat-sidenav-container class="mat-sidenav-container">
+    <mat-sidenav class="mat-sidenav" mode="side" opened>
+      <mat-card class="mat-card">
+        <mat-card-header class="mat-card-header">
+          <img
+            mat-card-avatar
+            src="https://xplorewilderness.herokuapp.com/assets/images/others/user.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+        </mat-card-header>
+        <div class="divider"></div>
+
+        <div class="">
+          <a class="link-list__item">
+            <mat-icon class="link-list__icon">view_list</mat-icon>
+            <span class="link-list__title">My Trips</span>
+          </a>
+        </div>
+
+        <div class="">
+          <a class="link-list__item">
+            <mat-icon class="link-list__icon">schedule</mat-icon>
+            <span class="link-list__title">Scheduled</span>
+          </a>
+        </div>
+
+        <div class="">
+          <a class="link-list__item">
+            <mat-icon class="link-list__icon">favorite</mat-icon>
+            <span class="link-list__title">History</span>
+          </a>
+        </div>
+
+        <div class="">
+          <a class="link-list__item">
+            <mat-icon class="link-list__icon">favorite</mat-icon>
+            <span class="link-list__title">Reviews</span>
+          </a>
+        </div>
+
+        <div class="">
+          <a class="link-list__item">
+            <mat-icon class="link-list__icon">favorite</mat-icon>
+            <span class="link-list__title">Analytics</span>
+          </a>
+        </div>
+      </mat-card>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="mat-sidenav-content">
+        <app-my-trips-list></app-my-trips-list>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
